@@ -1,0 +1,15 @@
+﻿---
+- name: Create inc
+  hosts: localhost
+  tasks:
+  - name: Create an incident
+    servicenow.servicenow.snow_record:
+      username: admin
+      password: n5-OVN9a-Ixx
+      instance: dev106630
+      state: present
+      data:
+        short_description: "This is a test incident opened by Ansible"
+        severity: 3
+        priority: 2
+    register: new_incident
