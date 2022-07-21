@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
     - name: Create an incident
-      servicenow.servicenow.snow_record:
+      snow_record:
         username: admin
         password: n5-OVN9a-Ixx
         instance: dev106630
