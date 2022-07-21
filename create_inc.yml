@@ -5,7 +5,7 @@
     - servicenow.servicenow
   tasks:
     - name: Create an incident
-      snow_record:
+      servicenow.servicenow.snow_record:
         username: admin
         password: n5-OVN9a-Ixx
         instance: dev106630
