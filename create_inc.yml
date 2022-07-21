@@ -1,6 +1,8 @@
 ﻿---
 - name: Create inc
   hosts: localhost
+  collections:
+    - servicenow.servicenow
   tasks:
     - name: Create an incident
       snow_record:
