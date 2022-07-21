@@ -1,6 +1,6 @@
 ﻿---
 - name: Create inc
-  hosts: localhost
+  hosts: all
   collections:
     - servicenow.servicenow
   tasks:
